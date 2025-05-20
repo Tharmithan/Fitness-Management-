@@ -1,7 +1,7 @@
 package com.fitness.membership_system.model;
 
 import java.time.LocalDateTime;
-
+//Chages 
 public class GymCheckIn extends CheckIn {
     public GymCheckIn(int checkInId, String userId, LocalDateTime checkInDate) {
         super(checkInId, userId, "Gym", checkInDate);

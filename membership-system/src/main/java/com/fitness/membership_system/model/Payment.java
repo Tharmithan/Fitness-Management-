@@ -8,6 +8,7 @@ public class Payment {
     private String method;
     private String status;
 
+    // Parameterized constructor
     public Payment(String paymentId, String userId, String username, double amount, String method, String status) {
         this.paymentId = paymentId;
         this.userId = userId;

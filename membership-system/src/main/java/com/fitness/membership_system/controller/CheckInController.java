@@ -75,7 +75,7 @@ public class CheckInController {
         model.addAttribute("userId", user.getId());
         return "checkin-history";
     }
-
+//show admin part
     @GetMapping("/admin")
     public String showAdminAttendance(HttpSession session, Model model) throws IOException {
         User user = (User) session.getAttribute("user");

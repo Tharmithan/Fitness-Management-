@@ -20,7 +20,7 @@ import com.fitness.membership_system.model.StrengthWorkout;
 import com.fitness.membership_system.model.Trainer;
 import com.fitness.membership_system.model.WorkoutPlan;
 import com.fitness.membership_system.service.WorkoutService;
-
+//contoller 
 @Controller
 @RequestMapping("/workout")
 public class WorkoutController {

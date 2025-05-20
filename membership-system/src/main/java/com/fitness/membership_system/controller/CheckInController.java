@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+
 import com.fitness.membership_system.model.Admin;
 import com.fitness.membership_system.model.CheckIn;
 import com.fitness.membership_system.model.GymCheckIn;
@@ -23,6 +24,7 @@ import com.fitness.membership_system.model.VirtualClassCheckIn;
 import com.fitness.membership_system.service.CheckInService;
 
 import jakarta.servlet.http.HttpSession;
+
 //this is controller part.
 @Controller
 @RequestMapping("/checkin")
@@ -75,7 +77,7 @@ public class CheckInController {
         model.addAttribute("userId", user.getId());
         return "checkin-history";
     }
-//show admin part
+
     @GetMapping("/admin")
     public String showAdminAttendance(HttpSession session, Model model) throws IOException {
         User user = (User) session.getAttribute("user");

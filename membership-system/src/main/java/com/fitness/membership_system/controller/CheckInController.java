@@ -23,7 +23,7 @@ import com.fitness.membership_system.model.VirtualClassCheckIn;
 import com.fitness.membership_system.service.CheckInService;
 
 import jakarta.servlet.http.HttpSession;
-//this is controller part
+//this is controller part.
 @Controller
 @RequestMapping("/checkin")
 public class CheckInController {
@@ -75,7 +75,7 @@ public class CheckInController {
         model.addAttribute("userId", user.getId());
         return "checkin-history";
     }
-
+//show admin part
     @GetMapping("/admin")
     public String showAdminAttendance(HttpSession session, Model model) throws IOException {
         User user = (User) session.getAttribute("user");

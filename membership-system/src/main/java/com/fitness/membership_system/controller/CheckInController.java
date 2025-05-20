@@ -23,7 +23,7 @@ import com.fitness.membership_system.model.VirtualClassCheckIn;
 import com.fitness.membership_system.service.CheckInService;
 
 import jakarta.servlet.http.HttpSession;
-//this is controller part
+//this is controller part.
 @Controller
 @RequestMapping("/checkin")
 public class CheckInController {

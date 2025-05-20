@@ -25,7 +25,7 @@ import com.fitness.membership_system.model.User;
 import com.fitness.membership_system.service.MembershipService;
 
 import jakarta.servlet.http.HttpSession;
-
+//controller 
 @Controller
 @RequestMapping("/membership")
 public class MembershipController {

@@ -66,7 +66,7 @@ public class UserController {
     public String showAdminLoginForm() {
         return "admin-login";
     }
-
+    //admin login part
     @PostMapping("/admin/login")
     public String loginAdmin(@RequestParam String username, @RequestParam String password, Model model,
             HttpSession session) throws IOException {

@@ -12,7 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.fitness.membership_system.model.Trainer;
-
+//spring boot controller part
 @Controller
 public class TrainerController {
     @GetMapping("/trainers")

@@ -1,7 +1,7 @@
 package com.fitness.membership_system.model;
 
 public class Payment {
-    private String paymentId;     //  New unique identifier for each payment
+    private String paymentId;    //  New unique identifier for each payment
     private String userId;
     private String username;
     private double amount;

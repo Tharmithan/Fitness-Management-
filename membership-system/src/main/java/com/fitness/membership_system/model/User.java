@@ -1,4 +1,5 @@
 package com.fitness.membership_system.model;
+//importent part 
 
 public abstract class User {
     private String id;

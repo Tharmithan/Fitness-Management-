@@ -1,14 +1,15 @@
 package com.fitness.membership_system.model;
 
 public class Payment {
-    private String paymentId;  // New unique identifier for each payment
+    private String paymentId;    //  New unique identifier for each payment
     private String userId;
     private String username;
     private double amount;
     private String method;
     private String status;
 
-    public Payment(String paymentId, String userId, String username, double amount, String method, String status) {
+// Parameterized constructor
+public Payment(String paymentId, String userId, String username, double amount, String method, String status) {
         this.paymentId = paymentId;
         this.userId = userId;
         this.username = username;
@@ -17,15 +18,17 @@ public class Payment {
         this.status = status;
     }
 
-    // Getters and setters
+        // Getters and setters
     public String getId() {
         return paymentId;  // Now returns the unique paymentId
     }
-
+        // setter method
+    
     public void setId(String paymentId) {
         this.paymentId = paymentId;
     }
 
+    
     public String getUserId() {
         return userId;
     }
@@ -54,7 +57,7 @@ public class Payment {
         return method;
     }
 
-    public void setMethod(String method) {
+    public void setMethod(String method){
         this.method = method;
     }
 

@@ -12,5 +12,8 @@ public class Admin extends User {
     public boolean isSuperAdmin() { return isSuperAdmin; }
     public void setSuperAdmin(boolean superAdmin) { isSuperAdmin = superAdmin; }
 
-   
+    @Override
+    public String getRole() {
+        return isSuperAdmin ? "SuperAdmin" : "Admin";
+    }
 }

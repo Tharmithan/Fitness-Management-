@@ -7,6 +7,7 @@ public abstract class MembershipPlan {
     private int durationMonths;
     private String accessRights;
 
+    //Parameterized constructor
     public MembershipPlan(String id, String name, double price, int durationMonths, String accessRights) {
         this.id = id;
         this.name = name;

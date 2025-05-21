@@ -44,8 +44,10 @@ public class UserController {
         userService.registerMember(user);
         return "redirect:/users/login";
     }
+     @GetMapping("/login")
+    public String showLoginForm() {
+        return "login";
 
-   
     }
 
     @PostMapping("/login")

@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 public class TrainerReview extends Review {
     private String trainerName;
 
+    //Parameterized constructor
     public TrainerReview(int reviewId, String userId, String content, LocalDateTime submissionDate, int rating,
             String trainerName) {
         super(reviewId, userId, content, submissionDate, rating);

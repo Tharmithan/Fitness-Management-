@@ -34,5 +34,5 @@ public abstract class User {
     public void setMembershipType(String membershipType) { this.membershipType = membershipType; }
     public String getName() { return getUsername(); }
 
-    public abstract String getRole();
+    
 }

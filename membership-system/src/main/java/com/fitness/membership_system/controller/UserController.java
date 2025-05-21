@@ -44,10 +44,10 @@ public class UserController {
         userService.registerMember(user);
         return "redirect:/users/login";
     }
-
-    @GetMapping("/login")
+     @GetMapping("/login")
     public String showLoginForm() {
         return "login";
+
     }
 
     @PostMapping("/login")
@@ -66,7 +66,7 @@ public class UserController {
     public String showAdminLoginForm() {
         return "admin-login";
     }
-
+    //admin login part
     @PostMapping("/admin/login")
     public String loginAdmin(@RequestParam String username, @RequestParam String password, Model model,
             HttpSession session) throws IOException {
@@ -81,7 +81,7 @@ public class UserController {
         model.addAttribute("error", "Invalid admin credentials");
         return "admin-login";
     }
-
+    //admin dashboard part
     @GetMapping("/admin/dashboard")
     public String showAdminDashboard(Model model, HttpSession session) {
         User user = (User) session.getAttribute("user");

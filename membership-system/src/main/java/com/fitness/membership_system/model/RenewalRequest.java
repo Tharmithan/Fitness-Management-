@@ -10,6 +10,7 @@ public class RenewalRequest {
     private LocalDate lastRenewalDate;
     private int priority;
 
+    //Parameterized constructor
     public RenewalRequest(String requestId, String userId, String planId, LocalDate requestDate, LocalDate lastRenewalDate, int priority) {
         this.requestId = requestId;
         this.userId = userId;

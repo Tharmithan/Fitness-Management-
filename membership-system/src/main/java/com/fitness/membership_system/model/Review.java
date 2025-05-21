@@ -9,6 +9,7 @@ public abstract class Review {
     private LocalDateTime submissionDate;
     private int rating;
 
+    //Parameterized constructer
     public Review(int reviewId, String userId, String content, LocalDateTime submissionDate, int rating) {
         this.reviewId = reviewId;
         this.userId = userId;

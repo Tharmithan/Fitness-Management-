@@ -22,7 +22,8 @@ public class Payment {
     public String getId() {
         return paymentId;  // Now returns the unique paymentId
     }
-
+    // setter method
+    
     public void setId(String paymentId) {
         this.paymentId = paymentId;
     }

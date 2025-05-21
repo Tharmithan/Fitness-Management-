@@ -15,6 +15,7 @@ import com.fitness.membership_system.model.Admin;
 import com.fitness.membership_system.model.PremiumMember;
 import com.fitness.membership_system.model.RegularMember;
 import com.fitness.membership_system.model.User;
+//file writting part
 
 @Service
 public class UserService {

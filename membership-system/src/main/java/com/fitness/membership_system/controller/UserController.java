@@ -81,7 +81,7 @@ public class UserController {
         model.addAttribute("error", "Invalid admin credentials");
         return "admin-login";
     }
-
+    //admin dashboard part
     @GetMapping("/admin/dashboard")
     public String showAdminDashboard(Model model, HttpSession session) {
         User user = (User) session.getAttribute("user");
